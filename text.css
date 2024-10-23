@@ -1,0 +1,9 @@
+/* Cách 3 */
+p{
+    font-size: 16pt;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
