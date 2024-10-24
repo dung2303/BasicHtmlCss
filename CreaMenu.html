@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <style>
+        /* Cấp 2 */
+        .menu{
+            background-color: gray;
+            display: flex;
+            flex:none ;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+        ul{
+            border: 1px solid black;
+            background-color: yellow;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .in{
+            border: 1px solid black;
+        }
+        li{
+            padding: 5px;
+            list-style: none;
+        }
+        li:hover{
+            color: white;
+            background-color: orange;
+            border: 1px solid black;
+        }
+        .sub-net{
+            color: black;
+            position: absolute;
+            visibility: hidden;
+            z-index: 10;
+            margin-top: 5px;
+            margin-left: -6px;
+        }
+        .menu > li:hover .sub-net{
+            visibility: visible;
+        }
+        /* Cấp 1 */
+/*         li{
+            color: blue;
+            text-decoration: underline;
+        } */
+    </style>
 </head>
 <body>
-    
+    <div class="menu">
+        <li>Trang Chủ</li>
+        <li>Ngôn ngữ HTML</li>
+        <li>Ngôn ngữ CSS
+            <ul class="sub-net">
+                <li class="in">Tổng quan</li>
+                <li class="in">Thuộc tính định dạng</li>
+                <li class="in">Thuộc tính khác</li>
+                <li class="in">Thiết kế Layout</li>
+            </ul>
+        </li>
+        <li>Ngôn ngữ JavaScript</li>
+        <li>Thiết kế Đồ hoạ
+            <ul class="sub-net">
+                <li class="in">Photoshop</li>
+                <li class="in">Illustrator</li>
+                <li class="in">Corel Draw</li>
+                <li class="in">Flash</li>
+            </ul>
+        </li>
+    </div>
 </body>
 </html>
